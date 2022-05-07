@@ -1,0 +1,28 @@
+model:
+  name: baseline
+  backbone: pointnet2
+  extra_channels: 0 # use xyz as input only
+  use_bn: True
+
+  NPOINTS: [4096, 1024, 256, 64]
+  RADIUS: [0.05, 0.1, 0.2, 0.3]
+  NSAMPLE: [32, 32, 32, 32]
+  MLPS: [[32, 32, 64], [64, 64, 128], [128, 128, 256], [256, 256, 512]]
+  FP_MLPS: [[256, 256], [256, 256], [256, 128], [128, 128, 128]]
+  CLS_FC: [128]
+  
+  sampler:
+    name: pointnet2_sampler
+    
+    learn_loc: False
+    soft_proj: False
+
+    use_bn: True
+    use_leaky: True
+    leaky_alpha: 0.2
+
+    NPOINTS: [1024, 256, 64]
+    RADIUS: [0.1, 0.2, 0.3]
+    NSAMPLE: [32, 32, 32]
+    MLPS: [[64, 64, 128], [128, 128], [128, 128]]
+    FP_MLPS: [[], [32, 16], [64, 64]]

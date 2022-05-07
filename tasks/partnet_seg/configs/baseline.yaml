@@ -1,0 +1,13 @@
+base_cfg: ./tasks/partnet_seg/configs/default/base.yaml
+
+dataset:
+  name: baseline
+  category: Chair
+  level: 3
+
+model:
+  name: baseline
+  
+train:
+  loss:
+    name: baseline

@@ -1,0 +1,20 @@
+base_cfg: ./tasks/partnet_seg/configs/default/base.yaml
+
+dataset:
+  name: joint
+  category: Chair
+  level: 3
+
+model:
+  name: joint
+  
+train:
+  loss:
+    name: joint
+    use_cd: False
+    use_emd: True
+    use_hint: True
+    
+    beta: 50.0
+    beta_decay: 0.95
+    beta_decay_step: 20
