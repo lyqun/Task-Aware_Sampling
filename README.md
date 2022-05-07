@@ -39,7 +39,7 @@ python setup.py install
 
 Download PartNet semantic segmentation dataset from https://www.shapenet.org/ and unzip them to `./datas/partnet/`. Download the `stats` folder from https://github.com/daerduoCarey/partnet_dataset/tree/master/stats and put it to `./datas/partnet/stats`
 
-Run the following commands to generate Edge-FPS sampling points:
+Run the following command to generate Edge-FPS sampling points:
 
 ```shell
 python ./utils/edge_fps.py
@@ -65,21 +65,21 @@ The folder should be organized as follows:
 
 ### 3. Training
 
-Run the following commands for training (Chair-3).
+Run the following command for training (Chair-3).
 
 ```shell
 CUDA_VISIBLE_DEVICES=0 python ./tools/train.py \
-	--cfg_path ./tasks/partnet_seg/configs/baseline.yaml \
+  --cfg_path ./tasks/partnet_seg/configs/baseline.yaml \
   --save_dir logs/baseline
 ```
 
 ### 4. Testing
 
-Run the following commands for testing (Chair-3).
+Run the following command for testing (Chair-3).
 
 ```shell
 CUDA_VISIBLE_DEVICES=0 python ./tools/test.py \
-	--cfg_path ./tasks/partnet_seg/configs/baseline.yaml \
+  --cfg_path ./tasks/partnet_seg/configs/baseline.yaml \
   --save_dir logs/baseline \
   --resume_metric part_miou
 ```
