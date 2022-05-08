@@ -19,10 +19,10 @@ Yiqun Lin, Lichang Chen, Haibin Huang, Chongyang Ma, Xiaoguang Han, Shuguang Cui
 
 ### 1. Environment
 
-This code has been tested with gcc 5.5, Python 3.7, PyTorch 1.8, and CUDA 10.2.
+This code has been tested with gcc 9.4, Python 3.6, PyTorch 1.8, and CUDA 11.1 on Ubuntu 20.04.
 
 ```shell
-conda ceate -n env_test python=3.7
+conda ceate -n env_test python=3.6
 source env.sh
 pip install torch torchvision
 pip install tqdm msgpack six tabulate termcolor pyyaml easydict
