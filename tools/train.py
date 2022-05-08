@@ -21,10 +21,10 @@ parser.add_argument("--debug", action='store_true', default=False)
 parser.add_argument("-c", "--category", type=str, default=None)
 parser.add_argument("-l", "--level", type=int, default=None)
 
-parser.add_argument("--batch_size", type=int, default=8)
+parser.add_argument("--batch_size", type=int, default=12)
 parser.add_argument('--workers', type=int, default=4)
 parser.add_argument('--eval_workers', type=int, default=None)
-parser.add_argument("--accum", type=int, default=24) # total batch size after gradient accumulation
+parser.add_argument("--accum", type=int, default=-1) # total batch size after gradient accumulation
 
 parser.add_argument("--local_rank", type=int, default=0)
 parser.add_argument("--dist", action='store_true', default=False)

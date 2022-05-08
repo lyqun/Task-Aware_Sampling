@@ -102,7 +102,7 @@ class Dataset_joint(Dataset_baseline):
 if __name__ == '__main__':
     from utils.config import load_config
     cfgs = load_config('./tasks/partnet_seg/configs/baseline.yaml')
-    dst = PartNet_Dataset_PREFPS(cfgs=cfgs.dataset, split='val')
+    dst = Dataset_baseline(cfgs=cfgs.dataset, split='val')
     print(len(dst))
     print(dst.num_class)
     
