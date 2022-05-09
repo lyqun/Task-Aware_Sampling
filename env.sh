@@ -1,2 +1,2 @@
-source activate nnunet # env_test
+source activate env_test
 export PYTHONPATH=$(pwd):$PYTHONPATH
