@@ -10,9 +10,6 @@ Yiqun Lin, Lichang Chen, Haibin Huang, Chongyang Ma, Xiaoguang Han, Shuguang Cui
   journal={IEEE Transactions on Visualization and Computer Graphics}, 
   title={Task-Aware Sampling Layer for Point-Wise Analysis}, 
   year={2022},
-  volume={},
-  number={},
-  pages={1-1},
   doi={10.1109/TVCG.2022.3171794}
 }
 ```
